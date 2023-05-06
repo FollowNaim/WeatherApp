@@ -1,0 +1,214 @@
+*{
+ margin: 0;
+ padding: 0;
+ outline: none;
+ box-sizing: border-box;
+ font-family: 'Itim', sans-serif;
+}
+body{
+ background: #06283D;
+}
+.container{
+ background: #fff;
+ margin: 60px 25px;
+ padding-top: 15px;
+ align-items: center;
+ justify-content: center;
+ height: 100px;
+ overflow: hidden;
+ border-radius: 10px;
+ transition: 0.6s ease-out;
+}
+
+/* Search Bar CSS */
+.searchBox{
+ margin-top: 7px;
+ margin-left: 5px;
+ display: flex;
+ justify-content: space-between;
+ margin: 10px 10px 30px 10px;
+}
+.searchBox input{
+ text-align: center;
+ padding: 7px;
+ border-radius: 10px;
+ border: 1px solid black;
+ text-transform: uppercase;
+}
+.searchBox input.error{
+ border: 3px solid red;
+}
+.searchBox input::placeholder{
+ font-weight: 700;
+ text-transform: capitalize;
+ font-size: 14px;
+ color: black;
+}
+.searchBox button{
+ border: none;
+ background: #dff6ff;
+ padding: 10px 15px;
+ color: black;
+ border-radius: 15px;
+}
+.searchBox i {
+ border: none;
+ color: #06283D;
+ padding: 10px 15px;
+ font-size: 22px;
+ border-radius: 15px;
+ 
+}
+
+/* Error Card Styling */
+ 
+ .errorBox{
+  width: 90%;
+  text-align: center;
+  margin-top: 90px;
+  scale: 0;
+  opacity: 0;
+  display: none;
+ }
+.errorBox img{
+ margin-left: 25px;
+ width: 70%;
+ height: 150px;
+}
+.errorBox p{
+ margin-left: 20px;
+ margin-top: 30px;
+ font-size: 20px;
+}
+
+/* Weather Card Styling */
+
+.weatherBox{
+ text-align: center;
+}
+.weatherBox img{
+ width: 60%;
+ margin-bottom: 30px;
+}
+.weatherBox p{
+ font-size: 25px;
+ margin-bottom: 5px;
+}
+.weatherBox .description{
+ text-transform: uppercase;
+/* color: #26de81;*/
+}
+
+/* Show input Details And Rwsult For */
+
+.showInput{
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+.country{
+ text-transform: uppercase;
+ font-size: 20px;
+ color: black;
+ border-bottom: 3px solid red;
+ text-align: center;
+}
+
+/* Weather Details Card Styling */
+
+.weather-details {
+ display: flex;
+ justify-content: space-between;
+ margin: 40px 50px;
+}
+.weather-details .humidity, .weather-details .wind{
+ display: flex;
+ align-items: center;
+ width: 50%;
+ height: 100px;
+
+}
+.humidity i{
+ margin-right: 10px;
+}
+.wind i{
+ margin-right: 10px;
+}
+.wind{
+ margin-left: 80px;
+}
+.text{
+ display: block;
+}
+.text span{
+ font-size: 18px;
+}
+
+/* Footer Styling */
+
+.footer{
+ background: #fff;
+ text-align: center;
+ width: 80%;
+ height: 47px;
+ border-radius: 10px;
+ margin-left: 40px;
+ padding-top: 2px;
+ position: fixed;
+}
+.footer a{
+ text-decoration: none;
+ color: black;
+}
+
+/* Extra Class And Animation */
+
+.fadeIn{
+ animation: 0.5s fadeIn forwards;
+ animation-delay: 0.5s;
+}
+@keyframes fadeIn{
+ to{
+ scale: 1;
+ opacity: 1;
+ }
+}
+
+
+
+/* Responsive Design */
+
+@media (min-width: 762px){
+ .container{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 50%;
+ }
+ .searchBox input{
+  padding: 0 50px;
+  margin-top: 5px;
+ }
+ .weatherBox img{
+  width: 25%;
+  height: 25%;
+  margin-top: 5%;
+ }
+ .weather-details{
+  margin-top: -1px;
+  margin-bottom: 90%;
+  margin-left: 20%;
+ }
+ .errorBox{
+  margin-left: 5%;
+ }
+ .errorBox img{
+  width: 60%;
+  height: 60%;
+ }
+ .footer{
+  width: 60%;
+  margin-left: 21%;
+ }
+ 
+}
