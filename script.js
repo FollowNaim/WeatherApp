@@ -6,16 +6,16 @@ const weatherDetails = document.querySelector(".weather-details");
 const searchBox = document.querySelector(".searchBox")
 const error404 = document.querySelector(".errorBox");
 const inputElement = document.querySelector(".searchBox input");
+const country = document.querySelector(".country");
 
 
-// Creating Function For Multi Use
+// Creating Function For Multi Usage
 
 
 function Weather(){
 
 const inputElement = document.querySelector(".searchBox input");
 const inputData = inputElement.value;
-
 const city = document.querySelector(".searchBox input").value;
 
 // Checking if input is empty Raise an Error.
@@ -28,6 +28,10 @@ const city = document.querySelector(".searchBox input").value;
   inputElement.classList.remove("error")
  }
  
+ // Show input Details And Rwsult For.
+ 
+country.innerHTML = "Results For " + inputData;
+ 
  // Fetching Data From API
  
  const apiKey = 'bcc629d63f33375872878d1483639e73';
@@ -37,13 +41,14 @@ const city = document.querySelector(".searchBox input").value;
  .then(response=>response.json())
  .then(json=>{
   
+  
   // if City is wrong container will show and error massage with image. And Block the Weather Deatils and temparature from showing.
   
   if(json.cod === '404'){
    weatherBox.style.display = "none";
    weatherDetails.style.display = "none";
    error404.style.display = "block";
-   document.querySelector(".container").style.height = "550px";
+   document.querySelector(".container").style.height = "520px";
    error404.classList.add("fadeIn");
    return;
   }
@@ -91,7 +96,7 @@ const city = document.querySelector(".searchBox input").value;
   weatherDetails.classList.add("fadeIn");
   weatherBox.style.display = '';
   weatherDetails.style.display = '';
-  document.querySelector(".container").style.height = '550px';
+  document.querySelector(".container").style.height = '570px';
   
   
   // Pushing Api Data into HTML
@@ -100,7 +105,7 @@ const city = document.querySelector(".searchBox input").value;
   temparature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
   description.innerHTML = `${json.weather[0].description}`;
   wind.innerHTML = `${parseInt(json.wind.speed)}Km/H`;
-  humidity.innerHTML = `${json.main.humidity}%`
+  humidity.innerHTML = `${json.main.humidity}%`;
   
   
  })
