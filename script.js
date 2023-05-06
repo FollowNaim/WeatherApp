@@ -84,6 +84,11 @@ country.innerHTML = "Results For " + inputData;
    case 'Snow':
     img.src = "images/snow.png"
     break;
+    
+    case 'Clouds':
+     img.src = "images/cloud.png"
+     break;
+    
    
    default:
    img.src = '';
