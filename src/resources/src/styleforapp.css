@@ -212,3 +212,11 @@ body{
  }
  
 }
+
+@media (max-width: 300px) {
+  .container {
+   margin: 30px 25px;
+    
+  }
+}
+
