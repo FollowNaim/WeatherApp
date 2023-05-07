@@ -213,7 +213,8 @@ body{
  
 }
 
-@media (max-width: 300px) {
+/* Styles for mobile devices (Relme 5i) */
+@media only screen and (max-width: 480px) {
   .container {
    margin: 30px 25px;
     
