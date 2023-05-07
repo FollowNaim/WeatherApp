@@ -213,19 +213,19 @@ body{
  
 }
 
-/* Styles for mobile devices (Relme 5i) */
-@media only screen and (max-width: 480px) {
+/*Styles for mobile devices (Realme 5i) */
+@media only screen and (max-width: 393px) {
   .container {
-   margin: 30px 25px;
+   margin: 20px 25px;
     
   }
 }
 
-/* Styles for mobile devices (Relme 5i) */
-@media only screen and (max-width: 500px) {
+/* Styles for mobile devices (Redmi note 11) */
+@media only screen and (min-width: 393px) {
   .container {
    margin: 60px 25px;
     
   }
 }
-
+*/
