@@ -213,15 +213,23 @@ body{
  
 }
 
-/*Styles for mobile devices (Realme 5i) */
+/*Styles for mobile devices (Realme 5i 720p) */
 @media only screen and (max-width: 393px) {
   .container {
-   margin: 20px 25px;
+   margin: 30px 25px;
+    
+   }
+   .weather-details{
+    margin: 45px 30px;
+   }
+   .searchBox input{
+    margin-right: 10px;
+   }
     
   }
 }
 
-/* Styles for mobile devices (Redmi note 11) */
+/* Styles for mobile devices (Redmi note 11 1080p#42445A) */
 @media only screen and (min-width: 393px) {
   .container {
    margin: 60px 25px;
