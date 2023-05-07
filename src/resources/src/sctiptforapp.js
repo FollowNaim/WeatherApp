@@ -1,3 +1,11 @@
+
+
+/* COPYRIGHT 2023 @NAIM13 ON TELEGRAM. ALL RIGHTS RESERVED */
+
+
+
+
+
 // Assigning variable 
 
 const searchBtn = document.querySelector("#SearchBtn");
