@@ -110,6 +110,8 @@ country.innerHTML = "Results For " + inputData;
   weatherBox.style.display = '';
   weatherDetails.style.display = '';
   document.querySelector(".container").style.height = '570px';
+  if(window.innerWidth > 762){
+   container.style.height = "fit-content";
   
   
   // Pushing Api Data into HTML
