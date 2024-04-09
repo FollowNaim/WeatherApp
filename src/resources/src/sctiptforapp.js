@@ -64,7 +64,7 @@ country.innerHTML = "Results For " + inputData;
    error404.style.display = "none";
    error404.classList.remove("fadeIn");
   }
-  
+ }).catch(error => {console.log(error)})
   // Assigning Variable And using Switch method for pushing And Changing Data.
   
   
